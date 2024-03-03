@@ -102,13 +102,13 @@ section {
 }
 
 #Home {
-  background: #fff;
+  background: #D3D3D3;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: left;
   padding-left: 20px; /* Adjust padding as needed */
-  margin-top: 150px;
+  margin-top: 130px;
   margin-bottom: -250px;
   position: relative;
 }
