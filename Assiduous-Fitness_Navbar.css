@@ -1,5 +1,7 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* Navigation Styles */
 nav {
   position: fixed;
   left: 0;
@@ -15,6 +18,8 @@ nav {
   height: 140px; /* Adjusted height to fit the logo */
   background: #262626;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding-bottom: 10px;
 }
 
 nav .navbar {
@@ -62,7 +67,7 @@ nav .navbar .menu {
   left: 0; /* Start the line from the left */
   width: 0; /* Initially, set the width to 0 */
   height: 2px;
-  background-color: #90ee90; /* Change to whatever color you want */
+  background-color: #408000; /* Change to whatever color you want */
   transition: width 0.3s ease; /* Add transition for smooth animation */
 }
 
@@ -70,6 +75,7 @@ nav .navbar .menu {
   width: 100%; /* Extend the line to the right */
 }
 
+/* Section Styles */
 section {
   display: flex;
   height: 100vh;
@@ -80,16 +86,49 @@ section {
   font-size: 70px;
 }
 
+/* Specific Section Styles */
 #Home {
   background: #fff;
+  justify-content: left;
 }
 
+#Home h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 75px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 20px; /* Adjust margin between header and paragraph */
+  max-width: 700px;
+}
+
+#Home {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  padding-left: 20px; /* Adjust padding as needed */
+  margin-top: 150px;
+  margin-bottom: -250px;
+  position: relative;
+}
+
+
+/* Other Section Styles */
 #About {
   background: #fff;
 }
 
-#Category {
-  background: #e6e6e6;
+#Nutrition {
+  background: #a4c4b2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  justify-content: right;
+  padding-left: 20px; /* Adjust padding as needed */
+  margin-top: 150px;
+  position: relative;
 }
 
 #Latest {
@@ -104,26 +143,99 @@ section {
   background: #e6e6e6;
 }
 
+/* Button Styles */
 .button a {
   position: fixed;
   bottom: 20px;
   right: 20px;
   color: #fff;
-  background: #2980b9;
+  background: #000;
   padding: 7px 12px;
   font-size: 18px;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.15);
 }
+/* Filler Text Styles */
 .filler-text {
   font-family: 'Rubik Mono One', sans-serif;
-  color: #90ee90; /* Text color */
-  font-size: 25px; /* Font size */
-  margin-right: auto; /*Adjust the margin to position the text */
-  margin-left: auto; /* Adjust the margin to position the text */
-  flex-grow: 1; /* Allow the filler text to grow and fill up remaining space */
+  color: #fff;
+  font-size: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  flex-grow: 1;
+}
+
+/* Home Section Styles */
+.right-image {
+  margin-left: 900px; /* Adjust the margin-left as needed */
+  width: 500px;
+  height: auto;
+  margin-top: -540px; /* Adjust the margin-top as needed */
+}
+
+.left-image {
+  margin-right: 1000px; /* Adjust the margin-left as needed */
+  margin-left: 0px;
+  width: auto;
+  height: 660px;
+  margin-top: -575px; /* Adjust the margin-top as needed */
+}
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+/* Header and Text Wrapper Styles */
+.header-wrapper h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 75px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 20px; /* Adjust the top position as needed */
+  left: 20px; /* Adjust the left position as needed */
+}
+
+.header-wrapper-nutrition {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 75px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 20px;
+  margin-right: 90px;
+  text-align: right; /* Align the text to the right */
 }
 
 
+.text-wrapper {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #333;
+  text-align: justify;
+}
 
+.nutrition-text-wrapper {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #333;
+  text-align: right;
+}
+/* Section Text Styles */
+.section-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  max-width: 800px;
+  color: #333;
+  margin-top: 0px;
+  margin-right: 400px;
+}
 
+.nutrition-section-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  text-align: justify;
+  max-width: 800px;
+  color: #333;
+  margin-top: 0px;
+  margin-right: 95px;
+}

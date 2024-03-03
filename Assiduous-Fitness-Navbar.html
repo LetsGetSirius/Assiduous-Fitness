@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
+<!-- Created By Salvatore Rizzo -->
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="Assiduous-Fitness_Navbar.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 
 
   <!-- Fontawesome CDN Link -->
@@ -14,27 +15,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+
   <nav>
     <div class="navbar">
       <div class="logo">
         <a href="Assiduous-Fitness-Navbar.html">
-          <img src="C:\Users\srizz\OneDrive\Documents\Assiduous Fitness\Pics\AlterLogo.png" alt="Assiduous Fitness">
+          <img src="C:\Users\srizz\OneDrive\Documents\Assiduous Fitness\Pics\TransparentLogo.png" alt="Assiduous Fitness">
         </a>
-        </div>
+      </div>
       <div>
-        <span class="filler-text">Commitment Produces Results!</span>
+        <span class="filler-text">Commitment Produces Results</span>
       </div>
       <ul class="menu">
-        <li><a href="#About">About</a></li>
+        <li><a href="Assiduous-Fitness-About.html">About</a></li>
         <li><a href="#Coaching_Plans">Coaching Plans</a></li>
         <li><a href="#Testimonials">Testimonials</a></li>
         <li><a href="#Contact">Contact</a></li>
       </ul>
     </div>
   </nav>
-  <section id="About">Content</section>
+<section id="Home" class="home-section">
+  <h2 class="header-wrapper h2">Personal Training</h2>
+  <div class="text-wrapper">
+    <p class="section-text">At <b>Assiduous Fitness</b>, I pride myself on my innovative approach to <b>personal training</b>. Through the cutting-edge virtual training app, you can conveniently access my services from the comfort of your home or any location of your choice. <b>My dedication</b> to your fitness journey extends far beyond the confines of a workout session. I provide <b>round-the-clock</b> messaging support, ensuring that you can reach out whenever you require guidance, motivation, or have any inquiries. <b>Seamlessly track your progress</b> and gain access to online programs equipped with comprehensive video tutorials. Tailored to suit busy lifestyles, our <b>structured programs</b> and personalized guidance are designed to enhance your fitness journey and elevate your overall experience.</p>
+  </div>
+  <img src="C:\Users\srizz\OneDrive\Documents\Assiduous Fitness\Pics\LegDipFlipped.jpg" alt="LegDip" class="right-image">
+</section>
+  <section id="Nutrition" class="nutrition-section">
+    <h2 class="header-wrapper-nutrition">Nutrition Coaching</h2>
+     <div class="nutrition-text-wrapper">
+    <p class="nutrition-section-text">I <b>specialize</b> in providing <b>expert nutrition coaching</b> services tailored to your individual needs. My approach is deeply rooted in scientific understanding, offering <b>education</b> on nutrition that extends beyond surface-level advice. <b>Together</b>, we'll explore the intricate relationship between food and your body, <b>empowering you</b> with the knowledge to interpret food labels and make informed dietary choices. I believe in equipping you with the <b>tools and understanding</b> necessary to navigate challenges and setbacks effectively. Through diligent progress monitoring and <b>unwavering support</b>, I ensure you stay on track towards your health and wellness goals. By choosing my services, you're not just enrolling in a nutrition plan—you're embarking on a <b>transformative journey</b> towards a <b>healthier</b>, more empowered <b>lifestyle.</b></p>
+  </div>
+    <img src="C:\Users\srizz\OneDrive\Documents\Assiduous Fitness\Pics\Nutrition.jpg" alt="Fierce" class="left-image"></section>
+  <section id="Services">Content</section>
+  <section id="Testimonials">Content</section>
   <div class="button">
     <a href="#Home"><i class="fas fa-arrow-up"></i></a>
   </div>
+  <script>
+    function scrollToHome() {
+      const element = document.querySelector('#About');
+      element.scrollIntoView({ behavior: 'instant' });
+    }
+  </script>
 </body>
 </html>
